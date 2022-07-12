@@ -1,4 +1,4 @@
-apiVersion: mytestapp/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: jhooq-springboot
@@ -6,15 +6,15 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: jhooq2
+      app: jhooq-springboot
   template:
     metadata:
       labels:
-        app: jhooq2
+        app: jhooq-springboot
     spec:
       containers:
         - name: springboot
-          image: midguar/jhooq-docker-demo:jhooq-k8s-springboot
+          image: rahulwagh17/kubernetes:jhooq-k8s-springboot
 
           resources:
             requests:
