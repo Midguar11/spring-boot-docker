@@ -6,15 +6,15 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: jhooq-springboot
+      app: jhooq2
   template:
     metadata:
       labels:
-        app: jhooq-springboot
+        app: jhooq2
     spec:
       containers:
         - name: springboot
-          image: midguar/kubernetes:jhooq-k8s-springboot
+          image: midguar/jhooq-docker-demo:jhooq-k8s-springboot
 
           resources:
             requests:
