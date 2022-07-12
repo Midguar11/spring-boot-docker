@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: springboot
-          image: midguard/kubernetes:jhooq-k8s-springboot
+          image: midguar/jhooq-docker-demo:jhooq-docker-demo
 
           resources:
             requests:
